@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
@@ -17,6 +17,12 @@ const Checkout = () => {
     instructions: ''
   });
 
+  useEffect(() => {
+    if (cartItems.length === 0) {
+      navigate('/');
+    }
+  }, [cartItems, navigate]);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -33,7 +39,6 @@ const Checkout = () => {
   };
 
   if (cartItems.length === 0) {
-    navigate('/');
     return null;
   }
 

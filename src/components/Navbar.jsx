@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <img 
-            src="https://img.sanishtech.com/u/5480682d260c9bf02cb3f1f59a6d15d5.png" 
+            src="/images/yazhini_logo.png" 
             alt="Yazhini Collection Logo" 
             style={{ 
               height: '50px', 

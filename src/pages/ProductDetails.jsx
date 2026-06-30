@@ -31,7 +31,9 @@ const ProductDetails = () => {
       </button>
       
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
-        <img src={product.image} alt={product.name} style={{ width: '100%', height: '500px', objectFit: 'cover', borderRadius: '12px' }} />
+        <div style={{ width: '100%', height: '500px', background: '#f5f5f5', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+          <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '20px' }} />
+        </div>
         <div>
           <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>{product.name}</h2>
           <p style={{ fontSize: '1.5rem', color: 'var(--primary-color)', fontWeight: '700', marginBottom: '1rem' }}>

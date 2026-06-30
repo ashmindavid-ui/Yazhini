@@ -9,22 +9,22 @@ const Home = () => {
     { 
       id: 'sarees', 
       title: 'Sarees', 
-      image: 'https://img.sanishtech.com/u/39dcca68d5ea61d36c97ed283959fb15.jpg'
+      image: '/images/category_sarees.jpg'
     },
     { 
       id: 'lehengas', 
       title: 'Lehengas', 
-      image: 'https://img.sanishtech.com/u/e54b85d35d05a7b66eb201057886754f.jpg'
+      image: '/images/category_lehengas.jpg'
     },
     { 
       id: 'kurtis', 
       title: 'Kurtis', 
-      image: 'https://img.sanishtech.com/u/a3e47350b4c89a8ce6b669df894c3ef5.jpg'
+      image: '/images/category_kurtis.jpg'
     },
     { 
       id: 'chudithars', 
       title: 'Chudithars', 
-      image: 'https://img.sanishtech.com/u/b521a8cbab604199f8c8a1df560fcea1.jpg'
+      image: '/images/category_chudithars.jpg'
     },
   ];
 
